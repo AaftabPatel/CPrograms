@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10], i , n, k=0;
+clrscr();
+for(i=1;i<=10;i++)
+	{
+	printf("please enter the %d no.",i);
+	scanf("%d", &a[i]);
+	}
+printf("please enter the number you want to search");
+scanf("%d", &n);
+for(i=0;i<10;i++)
+	{
+	if(a[i]==n)
+		{
+		printf("number is found at index %d",i);
+		k+=1;
+		}
+	}
+if(k==0)
+	printf("number not found!");
+getch();
+}
