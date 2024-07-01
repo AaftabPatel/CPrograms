@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n;
+clrscr();
+printf("please enter the day number:");
+scanf("%d", &n);
+
+switch(op)
+	{
+	case 1:	  printf("SUNDAY");
+		  break;
+
+	case 2:	  printf("MONDAY");
+		  break;
+	case 3:	  printf("TUESDAY");
+		  break;
+	case 4:   printf("WEDNESDAY");
+		  break;
+	case 5:	  printf("TURSDAY");
+		  break;
+	case 6:	  printf("FRIDAY");
+		  break;
+	case 7:	  printf("SAURDAY");
+		  break;
+	default:printf("please enter the correct day number!!!");
+	}
+getch();
+}
