@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int *p;
+int n1,n2,n3;
+clrscr();
+printf("please enter the first number:");
+scanf("%d", &n1);
+p=&n1;
+printf("first number is %d",n1 );
+printf("\nentered numbers pointer is: %p", p);
+
+
+printf("please enter the second number:");
+scanf("%d", &n2);
+p=&n2;
+printf("\nsecond number is %d",n2 );
+printf("\nentered numbers pointer is: %p", p);
+
+printf("please enter the third number:");
+scanf("%d", &n3);
+p=&n3;
+printf("\nthird number is %d",n3 );
+printf("\nentered numbers pointer is: %p", p);
+getch();
+}

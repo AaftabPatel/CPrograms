@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i, arr[2][2][2]= {
+			 {
+			  {1,2},
+			  {3,4},
+			 },
+			 {
+			  {5,6},
+			  {7,8},
+			 }
+			};
+int *p=&arr;
+clrscr();
+for(i=1;i<=8;i++,p++)
+	{
+	if (i%4==0)
+		printf("%d\n", *p);
+	if else(i%2==0)
+		printf("%d , ", *p);
+	else
+		printf("%d  ", *p);
+	}
+getch();
+}

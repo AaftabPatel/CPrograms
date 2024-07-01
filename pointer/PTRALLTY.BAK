@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void *p1;
+void *p2;
+void *p3;
+void *p4;
+void *p5;
+
+int n1;
+float n2;
+long n3;
+double n4;
+char n5;
+clrscr();
+printf("please enter the integer number:");
+scanf("%d", &n1);
+p1=&n1;
+printf("please enter the long number:");
+scanf("%ld", &n2);
+p2=&n2;
+printf("please enter the float number:");
+scanf("%f", &n3);
+p3=&n3;
+printf("please enter the double number;");
+scanf("%lf", &n4);
+p4=&n4;
+printf("please enter the character:");
+scanf("%c", &n5);
+p5=&n5;
+
+printf("address of integer number is: %p", p1);
+printf("address of long number is: %p", p2);
+printf("address of float number is: %p", p3);
+printf("address of double number is: %p", p4);
+printf("address of the character is: %p", p5);
+}
