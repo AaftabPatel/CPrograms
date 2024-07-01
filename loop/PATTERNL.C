@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int j,i,space=0;
+char ch='E';
+clrscr();
+for(i=1;i<=5;i++)
+	{
+	for(j='A';j<=ch;j++)
+		printf("%c",j);
+	if(i==1)
+		printf("\b");
+	for(j=1;j<space;j++)
+		printf(" ");
+	for(j=ch;j>='A';j--)
+		printf("%c",j);
+	printf("\n");
+	ch--;
+	space+=2;
+	}
+getch();
+}

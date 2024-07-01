@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10], i, j;
+clrscr();
+for(j=0;j<10;j++)
+	{
+	printf("please enter the no. at index %d:",j);
+	scanf("%d", &a[j]);
+	}
+for(i=9;i>=0;i--)
+	printf("reversed array is: %d", a[i]);
+getch();
+}

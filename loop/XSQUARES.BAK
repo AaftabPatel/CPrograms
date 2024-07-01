@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int i,n,sum=1,num;
+clrscr();
+printf("please enter the number till you want th series:");
+scanf("%d", &n);
+printf("please enter the number whose series you want");
+scanf("%d", &num);
+printf("series is: 1+");
+for (i=1;i<=n;i++)
+	{
+	printf("	%d^%d+",num,i);
+	sum+=pow(num,i);
+	}
+printf("\nsum of series is: %d", sum);
+getch();
+}
