@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char str1[100],str2[100];
+int i;
+clrscr();
+printf("plese enter the first string:");
+gets(str1);
+printf("plese enter the second string:");
+gets(str2);
+
+for(i=0;str2[i]!='\0';++i)
+	{
+	if(str1[i]==str2[i])
+		{
+		printf("entered strings are equal");
+		break;
+		}
+	else
+		{
+		printf("entered strings are not equal");
+		break;
+		}
+	}
+getch();
+}

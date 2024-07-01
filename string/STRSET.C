@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char ch, str[100];
+int i;
+clrscr();
+printf("plese enter the string you want to convert:");
+gets(str);
+printf("please enter the character you want to change the string to:");
+scanf("%c", &ch);
+printf("string before change is:%s\n",str);
+printf("string after change is:");
+for(i=0;str[i]!='\0';++i)
+	{
+	printf("%c",ch);
+	}
+
+getch();
+}
