@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i, j, pos, n, s, arr[100];
+clrscr();
+printf("please entr the number of elements:");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+	{
+	printf("enter element at index %d:", i);
+	scanf("%d", &arr[i]);
+	}
+printf("array before sorting:");
+for(i=0;i<n;i++)
+	printf("%d,", arr[i]);
+for(i=0;i<(n-1);i++)
+	{
+	pos=i;
+	for(j=(i+1);j<n;j++)
+	      {
+	      if(arr[pos]>arr[j])
+		pos=j;
+	      }
+	if(pos != i)
+		{
+		s=arr[i];
+		arr[i]=arr[pos];
+		arr[pos]=s;
+		}
+	}
+
+printf("\narray after sorting:");
+for(i=0;i<n;i++)
+	printf("%d,", arr[i]);
+
+getch();
+}
