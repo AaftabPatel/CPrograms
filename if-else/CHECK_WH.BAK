@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num;
+clrscr();
+printf("please enter the number:");
+scanf("%d", &num);
+	(num >= 0)? printf("entered number is a whole number"):
+	printf("\nentered number is not a whole number");
+getch();
+}
