@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int p, r, t, ci;
+clrscr();
+printf("\nplease enter the principle amount:");
+scanf("%d", &p);
+printf("\nenter the rate:");
+scanf("%d", &r);
+printf("\nenter the time:");
+scanf("%d", &t);
+ci=p*(pow((1+r/100),t));
+printf("\ncompound intrest is = %d", ci);
+getch();
+}
